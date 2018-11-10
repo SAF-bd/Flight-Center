@@ -261,8 +261,7 @@ exports.getV1_2HotelsSearch_circle = function(req, res) {
 	res.status(200);
 
 	// set response body and send
-	res.type('json');
-	res.render('v1_2_getV1_2HotelsSearch_circle');
+	res.json({});
 };
 
 /*
@@ -296,8 +295,7 @@ exports.getV1_2HotelsSearch_box = function(req, res) {
 	res.status(200);
 
 	// set response body and send
-	res.type('json');
-	res.render('v1_2_getV1_2HotelsSearch_box');
+	res.json({});
 };
 
 /*
@@ -483,7 +481,8 @@ exports.getV1_2TrainsSchedule_search = function(req, res) {
 	res.status(200);
 
 	// set response body and send
-	res.json({});
+	res.type('json');
+	res.render('v1_2_getV1_2TrainsSchedule_search');
 };
 
 /*
@@ -507,7 +506,8 @@ exports.getV1_2Travel_record = function(req, res) {
 	res.status(200);
 
 	// set response body and send
-	res.json({});
+	res.type('json');
+	res.render('v1_2_getV1_2Travel_record');
 };
 
 /*

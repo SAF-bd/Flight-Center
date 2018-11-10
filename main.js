@@ -37,21 +37,3 @@ Sandbox.define("/v1.2/travel-intelligence/top-searches", "GET", v1_2.getV1_2Trav
 Sandbox.define("/v1.2/travel-intelligence/flight-traffic", "GET", v1_2.getV1_2Travel_intelligenceFlight_traffic);
 Sandbox.define("/v1.2/points-of-interest/yapq-search-text", "GET", v1_2.getV1_2Points_of_interestYapq_search_text);
 Sandbox.define("/v1.2/points-of-interest/yapq-search-circle", "GET", v1_2.getV1_2Points_of_interestYapq_search_circle);
-
-Sandbox.define('/','GET', function(req, res) {
-    // Check the request, make sure it is a compatible type
-    if (!req.is('application/json')) {
-        return res.send(400, 'Invalid content type, expected application/json');
-    }
-    
-    // Set the type of response, sets the content type.
-    res.type('application/json');
-    
-    // Set the status code of the response.
-    res.status(200);
-    
-    // Send the response body.
-    res.json({
-        "status": "ok"
-    });
-})
