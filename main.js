@@ -19,7 +19,7 @@ Sandbox.define("/v1.2/flights/extensive-search", "GET", v1_2.getV1_2FlightsExten
 Sandbox.define("/v1.2/flights/low-fare-search", "GET", v1_2.getV1_2FlightsLow_fare_search);
 Sandbox.define("/v1.2/flights/affiliate-search", "GET", v1_2.getV1_2FlightsAffiliate_search);
 Sandbox.define("/v1.2/location/{code}", "GET", v1_2.getV1_2Location);
-Sandbox.define("/v1.2/airports/autocomplete", "GET", v1_2.getV1_2AirportsAutocomplete);
+Sandbox.define('/v1.2/airports/autocomplete', 'ALL', v1_2.getV1_2AirportsAutocomplete);
 Sandbox.define("/v1.2/airports/nearest-relevant", "GET", v1_2.getV1_2AirportsNearest_relevant);
 Sandbox.define("/v1.2/hotels/search-airport", "GET", v1_2.getV1_2HotelsSearch_airport);
 Sandbox.define("/v1.2/hotels/search-circle", "GET", v1_2.getV1_2HotelsSearch_circle);
