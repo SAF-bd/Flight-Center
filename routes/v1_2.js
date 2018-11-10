@@ -224,8 +224,7 @@ exports.getV1_2HotelsSearch_airport = function(req, res) {
 	res.status(200);
 
 	// set response body and send
-	res.type('json');
-	res.render('v1_2_getV1_2HotelsSearch_airport');
+	res.json({});
 };
 
 /*
@@ -481,8 +480,7 @@ exports.getV1_2TrainsSchedule_search = function(req, res) {
 	res.status(200);
 
 	// set response body and send
-	res.type('json');
-	res.render('v1_2_getV1_2TrainsSchedule_search');
+	res.json({});
 };
 
 /*
